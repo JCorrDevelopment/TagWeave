@@ -32,5 +32,7 @@ pygments==2.18.0
     # via pdoc
 pytest==8.3.4
 ruff==0.8.4
+twilight-utils==0.0.1
+    # via tag-weave
 typing-extensions==4.12.2
     # via mypy
