@@ -10,5 +10,7 @@
 #   universal: false
 
 -e file:.
+bidict==0.23.1
+    # via tag-weave
 twilight-utils==0.0.1
     # via tag-weave

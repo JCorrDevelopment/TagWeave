@@ -10,6 +10,8 @@
 #   universal: false
 
 -e file:.
+bidict==0.23.1
+    # via tag-weave
 colorama==0.4.6
     # via pytest
 iniconfig==2.0.0

@@ -4,6 +4,7 @@ version = "0.0.1"
 description = "Simple and customizable tag-based text template engine"
 dependencies = [
     "twilight-utils>=0.0.1",
+    "bidict>=0.23.1",
 ]
 readme = "README.md"
 requires-python = ">= 3.13"
