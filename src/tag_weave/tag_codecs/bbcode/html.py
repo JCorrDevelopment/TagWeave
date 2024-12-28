@@ -31,3 +31,31 @@ class BbCodeBoltHtmlEncoder(_BbCodeBaseHtmlEncoder):
 
     def __init__(self) -> None:
         super().__init__(html_start="<strong>", html_end="</strong>")
+
+
+class BbCodeItalicHtmlEncoder(_BbCodeBaseHtmlEncoder):
+    """
+    Encode specified BBCode template italic tag (`[i]...[/i]`) to HTML format.
+
+    Examples:
+            >>> encoder = BbCodeItalicHtmlEncoder()
+            >>> encoder("[i]Hello, World![/i]", Tag(start="[i]", end="[/i]", name="italic"))
+            '<em>Hello, World!</em>'
+    """
+
+    def __init__(self) -> None:
+        super().__init__(html_start="<em>", html_end="</em>")
+
+
+class BbCodeUnderlineHtmlEncoder(_BbCodeBaseHtmlEncoder):
+    """
+    Encode specified BBCode template underline tag (`[u]...[/u]`) to HTML format.
+
+    Examples:
+            >>> encoder = BbCodeUnderlineHtmlEncoder()
+            >>> encoder("[u]Hello, World![/u]", Tag(start="[u]", end="[/u]", name="underline"))
+            '<u>Hello, World!</u>'
+    """
+
+    def __init__(self) -> None:
+        super().__init__(html_start="<u>", html_end="</u>")

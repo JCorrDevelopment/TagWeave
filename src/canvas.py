@@ -15,7 +15,7 @@ def main() -> None:  # noqa: D103
     # Enter your code here
     bbcode_registry = TagRegistry.from_dict(BB_CODE_CONFIG)
     template_codec = Codec(bbcode_registry)
-    test_string = "[b]Hello, World![/b]"
+    test_string = "[b]Hello, World![i] It's some other text[/b] [u]With[/i] underline![/u]"
     result = template_codec.encode(test_string, "html")
     print(result)
 
