@@ -20,3 +20,19 @@ class InvalidTagSpecError(TagWeaveError):
 
 class DecoderIsNotProvidedError(TagWeaveError):
     """Raised when the decoder is not provided for the tag."""
+
+
+class CodecIsNotProvidedError(TagWeaveError):
+    """Raised when the codec is not provided for the tag."""
+
+
+class ConfigurationError(TagWeaveError):
+    """Raised when the configuration is invalid."""
+
+
+class IncorrectValidatorError(TagWeaveError):
+    """Raised when the validator is not valid."""
+
+
+class IncorrectEncoderError(TagWeaveError):
+    """Raised when the encoder is not valid."""
